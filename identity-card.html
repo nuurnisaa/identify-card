@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<h1 id="ic"></h1>
+
+
+<script>
+var state="";
+var ic="988888-01-5000";
+var result=ic.substring(7,9);
+if(result==01 || result==21|| result==22|| result==23|| result==24)
+{
+  result="Johor";
+}
+else if(result==08 || result== 36 || result==37)
+{
+  result="Perak";
+}
+else{
+  result="Lain-lain";
+}
+
+
+
+document.getElementById("ic").innerHTML=result;
+</script>
+
+</body>
+</html>
